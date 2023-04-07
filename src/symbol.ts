@@ -1,7 +1,7 @@
 
 'use strict';
 
-import * as vscode from '@vscode/test-electron';
+import * as vscode from 'vscode';
 import { join, dirname } from 'path';
 
 export enum ItemType {

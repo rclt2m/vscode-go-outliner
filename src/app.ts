@@ -1,5 +1,5 @@
 import cp = require('child_process');
-import * as vscode from '@vscode/test-electron';
+import * as vscode from 'vscode';
 import { Symbol, ItemType } from './symbol';
 import { dirname } from 'path';
 import { Provider, ProviderType } from './provider';

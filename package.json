@@ -2,11 +2,10 @@
     "name": "go-outliner-simplify",
     "displayName": "Go Outliner Only Exported And Interface Subdivided",
     "description": "Go code outline explorer, forked from 766b/vscode-go-outliner ; type Subdivided into type and interface, and only exportable types are kept",
-    "version": "0.1.21",
+    "version": "0.1.24",
     "publisher": "rclt2m",
     "engines": {
-        "vscode": "^1.23.0",
-        "@types/vscode": "^1.23.0"
+        "vscode": "^1.23.0"
     },
     "categories": [
         "Other"
@@ -40,14 +39,14 @@
         "viewsContainers": {
             "activitybar": [
                 {
-                    "id": "go-outliner",
+                    "id": "go-outliner-simplify",
                     "title": "Go Outliner",
                     "icon": "resources/icons/list-alt.svg"
                 }
             ]
         },
         "views": {
-            "go-outliner": [
+            "go-outliner-simplify": [
                 {
                     "id": "outlinerExplorerView",
                     "name": "Explorer"
@@ -111,8 +110,10 @@
         }
     },
     "scripts": {
+        "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
@@ -120,6 +121,6 @@
         "@types/node": "^7.10.14",
         "tslint": "^5.8.0",
         "typescript": "^2.6.1",
-        "@vscode/test-electron": "^1.1.6"
+        "vscode": "^1.1.6"
     }
 }
