@@ -1,11 +1,12 @@
 {
-    "name": "go-outliner",
+    "name": "go-outliner-simplify",
     "displayName": "Go Outliner",
-    "description": "Go code outline explorer",
+    "description": "Go code outline explorer, forked from 766b/vscode-go-outliner ; type Subdivided into type and interface, and only exportable types are kept",
     "version": "0.1.20",
-    "publisher": "766b",
+    "publisher": "rclt2m",
     "engines": {
-        "vscode": "^1.23.0"
+        "vscode": "^1.23.0",
+        "@types/vscode": "^1.23.0"
     },
     "categories": [
         "Other"
@@ -17,7 +18,7 @@
     "main": "./out/extension",
     "repository": {
         "type": "git",
-        "url": "https://github.com/766b/vscode-go-outliner.git"
+        "url": "https://github.com/rclt2m/vscode-go-outliner.git"
     },
     "contributes": {
         "configuration": {
@@ -110,17 +111,15 @@
         }
     },
     "scripts": {
-        "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6",
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.10.14",
         "tslint": "^5.8.0",
-        "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "typescript": "^2.6.1",
+        "@vscode/test-electron": "^1.1.6"
     }
 }

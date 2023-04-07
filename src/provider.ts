@@ -1,7 +1,7 @@
 
 'use strict';
 
-import * as vscode from 'vscode';
+import * as vscode from '@vscode/test-electron';
 import { Symbol, ItemType } from './symbol';
 
 export enum ProviderType {
