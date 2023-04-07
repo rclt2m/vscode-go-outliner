@@ -2,7 +2,7 @@
     "name": "go-outliner-simplify",
     "displayName": "Go Outliner Only Exported And Interface Subdivided",
     "description": "Go code outline explorer, forked from 766b/vscode-go-outliner ; type Subdivided into type and interface, and only exportable types are kept",
-    "version": "0.1.20",
+    "version": "0.1.21",
     "publisher": "rclt2m",
     "engines": {
         "vscode": "^1.23.0",
