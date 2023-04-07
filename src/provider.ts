@@ -39,7 +39,7 @@ export class Provider implements vscode.TreeDataProvider<Symbol> {
             note.collapsibleState = vscode.TreeItemCollapsibleState.None;
             list.push(note);
         } else {
-            [ItemType.Type, ItemType.Func, ItemType.Var, ItemType.Const].forEach(e => {
+            [ItemType.Interface,ItemType.Type, ItemType.Func, ItemType.Var, ItemType.Const].forEach(e => {
                 if (this.countType(e) > 0) {
                     list.push(Symbol.NewRootItem(e));
                 }

@@ -7,6 +7,7 @@ import { join, dirname } from 'path';
 export enum ItemType {
     None = "none",
     Type = "type",
+    Interface = "interface",
     Func = "func",
     Var = "var",
     Const = "const"
@@ -55,6 +56,8 @@ export class Symbol {
         switch (this.type) {
             case "type":
                 return getIcons("class");
+            case "interface":
+                return getIcons("class");
             case "var":
                 return getIcons("field");
             case "const":
@@ -77,6 +80,9 @@ export class Symbol {
     static NewRootItem(type: ItemType): Symbol {
         let s = new Symbol;
         switch (type) {
+            case ItemType.Interface:
+                s.label = "Interfaces";
+                break;
             case ItemType.Func:
                 s.label = "Functions";
                 break;
