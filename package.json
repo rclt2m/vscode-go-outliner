@@ -1,9 +1,10 @@
 {
     "name": "go-outliner-simplify",
-    "displayName": "Go Outliner Only Exported And Interface Subdivided",
-    "description": "Go code outline explorer, forked from 766b/vscode-go-outliner ; type Subdivided into type and interface, and only exportable types are kept",
-    "version": "0.1.27",
+    "displayName": "Go Outliner Simplified Version",
+    "description": "Go code outline explorer, forked from 766b/vscode-go-outliner ; Changes include: 1. Added interface entries, 2. Only show exportable entries",
+    "version": "0.1.28",
     "publisher": "rclt2m",
+    "icon": "resources/icons/vertical-alignment-svgrepo-com.png",
     "engines": {
         "vscode": "^1.23.0"
     },
@@ -41,7 +42,7 @@
                 {
                     "id": "go-outliner-simplify",
                     "title": "Go Outliner",
-                    "icon": "resources/icons/list-alt.svg"
+                    "icon": "resources/icons/align-left-line-svgrepo-com.svg"
                 }
             ]
         },
